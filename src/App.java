@@ -19,22 +19,22 @@ public class App {
          *   *****
          * 
          */
-        int Space = 0;
-        int Dot = 1;
-        int Limit = 10;
+        //int Space = 0;
+        //int Dot = 1;
+        int Limit = 4;
         for (int a = 0; a < Limit; a++) {
-            Space = Limit - a - 1;
+            //Space = Limit - a - 1;
 
             //印出空白
-            for (int b = 0; b < Space; b++) {
+            for (int b = 0; b < Limit - a - 1; b++) {
                 System.out.print(" ");
             }
             //印出*
-            for (int b = 1; b <= Dot; b++) {
+            for (int b = 1; b <= 2*a+1; b++) {
                 System.out.print("*");
             }
 
-            Dot += 2;
+            //Dot += 2;
 
             System.out.println("\r");
         }
