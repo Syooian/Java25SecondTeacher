@@ -8,14 +8,10 @@ public class Test1 {
         AAA = "ASD";
     }
 
-    public Test1(String A) {
-        AAA = A;
-    }
-
-    // public Test1(String A="AAA")
-    // {
+    // public Test1(String A) {
     //     AAA = A;
     // }
+
     public void Call() {
         System.out.println(AAA);
     }
