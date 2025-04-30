@@ -1,3 +1,4 @@
+package MyTest;
 
 public class App {
 
@@ -70,5 +71,16 @@ public class App {
         }
         System.out.println("Max : " + Max);
 
+        //========================================
+        for (int a = 0; a < 10; a++) {
+            var C = new Cloth();
+            C.Color = "Color" + a;
+            C.Logo = "Logo" + a;
+            C.Size = "Size" + a;
+
+            System.out.println(a + " Color : " + C.Color + ", Logo : " + C.Logo + ", Size : " + C.Size);
+        }
+
+        System.out.println("==========================");
     }
 }
