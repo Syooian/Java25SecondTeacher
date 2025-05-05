@@ -1,6 +1,10 @@
 package MyTest;
 
+import Exam.M1;
+import Exam.M1.EarningsChild;
+
 public class Main {
+
     public static void main(String[] args) {
         // Test1 test1 = new Test1("ASD");
         // test1.Call();
@@ -16,5 +20,8 @@ public class Main {
 
         Test2 test2 = new Test2();
         test2.Call(); // 呼叫 Test2 的 Call 方法
+
+    
+
     }
 }

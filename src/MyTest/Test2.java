@@ -12,4 +12,7 @@ public class Test2 extends Test1 {
         System.out.println("AAA : " + AAA);
     }
 
+    public void Call2(String S) {
+
+    }
 }
