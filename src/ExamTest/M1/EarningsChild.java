@@ -1,4 +1,4 @@
-package Exam.M1;
+package ExamTest.M1;
 
 public class EarningsChild extends Earnings {
 

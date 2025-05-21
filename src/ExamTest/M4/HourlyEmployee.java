@@ -1,6 +1,6 @@
-package Exam.M4;
+package ExamTest.M4;
 
-import Exam.M3.Employee;
+import ExamTest.M3.Employee;
 
 public class HourlyEmployee extends Employee {
 

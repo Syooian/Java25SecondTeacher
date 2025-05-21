@@ -1,8 +1,8 @@
-package Exam.M3;
+package ExamTest.M3;
 
-import Exam.M1.Earnings;
-import Exam.M2.Invoice;
-import Exam.M2.Payable;
+import ExamTest.M1.Earnings;
+import ExamTest.M2.Invoice;
+import ExamTest.M2.Payable;
 
 public class Employee extends Earnings implements Payable, Invoice {
 

@@ -1,4 +1,4 @@
-package Exam.M2;
+package ExamTest.M2;
 
 public interface Invoice {
 

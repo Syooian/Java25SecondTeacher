@@ -1,6 +1,6 @@
-package Exam;
+package ExamTest;
 
-import Exam.M1.EarningsChild;
+import ExamTest.M1.EarningsChild;
 
 public class Main {
 
