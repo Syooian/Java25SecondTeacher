@@ -10,4 +10,7 @@ public abstract class Earnings {
         this.Mobile = Mobile;
     }
 
+    public String GetName() {
+        return Name;
+    }
 }

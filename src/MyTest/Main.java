@@ -1,7 +1,7 @@
 package MyTest;
 
-import Exam.M1;
-import Exam.M1.EarningsChild;
+//import ExamTest;
+import ExamTest.M1.EarningsChild;
 
 public class Main {
 
