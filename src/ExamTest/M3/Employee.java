@@ -1,48 +1,53 @@
 package ExamTest.M3;
 
 import ExamTest.M1.Earnings;
-import ExamTest.M2.Invoice;
-import ExamTest.M2.Payable;
+import ExamTest.M2.iInvoice;
+import ExamTest.M2.iPayable;
 
-public class Employee extends Earnings implements Payable, Invoice {
+public class Employee extends Earnings implements iPayable, iInvoice {
+
+    String Name;
+    String Mobile;
 
     public Employee(String Name, String Mobile) {
-        super(Name, Mobile);
+        SetName(Name);
+        SetMobile(Mobile);
     }
 
-    @Override
     public void SetName(String Name) {
         this.Name = Name;
     }
 
-    @Override
     public String GetName() {
         return Name;
     }
 
-    @Override
     public void SetMobile(String Mobile) {
         this.Mobile = Mobile;
     }
 
-    @Override
     public String GetMobile() {
         return Mobile;
     }
 
     @Override
-    public int GetTax() {
-        return 100;
+    public void GetTax() {
+        
     }
 
     @Override
-    public int GetPaymentAmount() {
-        return 999;
+    public void GetPaymentAmount() {
+        
     }
 
     @Override
     public String toString() {
         // 返回員工的詳細資訊
-        return "Name : " + GetName() + ", Mobile: " + GetMobile() + ", Tax: " + GetTax();
+        return "";
+    }
+
+    @Override
+    public void Earnings(){
+
     }
 }

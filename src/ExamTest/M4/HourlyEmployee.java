@@ -4,13 +4,13 @@ import ExamTest.M3.Employee;
 
 public class HourlyEmployee extends Employee {
 
-    String Wage;
+    int Wage;
 
-    public void SetWage(String Wage) {
+    public void SetWage(int Wage) {
         this.Wage = Wage;
     }
 
-    public String GetWage() {
+    public int GetWage() {
         return Wage;
     }
 
@@ -24,9 +24,36 @@ public class HourlyEmployee extends Employee {
         return Hours;
     }
 
-    public HourlyEmployee(String Name, String Mobile, String Wage, int Hours) {
+    public HourlyEmployee(String Name, String Mobile, int Wage, int Hours) {
         super(Name, Mobile);
-        this.Wage = Wage;
-        this.Hours = Hours;
+        SetWage(Wage);
+        SetHours(Hours);
+    }
+
+    @Override
+    public String toString(){
+        return 
+            "Name : " + GetName() + 
+            ", Mobile: " + GetMobile() + 
+            ", Wage: " + GetWage() + 
+            ", Hours: " + GetHours();
+    }
+
+    @Override
+    public void GetTax(){
+        System.out.println("Tax : " + GetWage() * GetHours() * 0.05);
+    }
+
+    @Override
+    public void GetPaymentAmount(){
+        int Earnings=GetWage()*GetHours();
+        double Tax=Earnings*0.05;
+        double PaymentAmount=Earnings-Tax;
+        System.out.println("取得員工扣稅所得 : " + PaymentAmount);
+    }
+
+    @Override
+    public void Earnings(){
+        System.out.println("取得員工未扣稅所得 : " + GetWage() * GetHours());
     }
 }
